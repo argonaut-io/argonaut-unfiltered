@@ -4,7 +4,7 @@ import unfiltered.request._
 
 import argonaut._, Argonaut._
 
-object JsonBody {
+object JsonRequest {
   /**
    * See argonaut.ParseWrap for API details.
    */
