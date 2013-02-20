@@ -1,4 +1,4 @@
-package argonaut.unfiltered
+package argonaut.integrate.unfiltered
 
 import unfiltered.request._
 
