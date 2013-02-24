@@ -2,14 +2,12 @@ organization := "io.argonaut"
 
 name := "argonaut-unfiltered"
 
-version := "6.0-SNAPSHOT"
-
 scalaVersion := "2.9.2"
 
 crossScalaVersions := Seq("2.9.2", "2.10.0")
 
 libraryDependencies ++= Seq(
-  "io.argonaut" %% "argonaut" % "6.0-SNAPSHOT" cross(CrossVersion.full) changing(),
+  "io.argonaut" %% "argonaut" % "6.0-M1",
   "net.databinder" %% "unfiltered" % "0.6.7",
   "net.databinder" %% "unfiltered-filter" % "0.6.7" % "test",
   "net.databinder" %% "unfiltered-jetty" % "0.6.7" % "test"
