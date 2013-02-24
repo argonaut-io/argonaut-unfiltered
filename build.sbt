@@ -6,6 +6,8 @@ scalaVersion := "2.9.2"
 
 crossScalaVersions := Seq("2.9.2", "2.10.0")
 
+releaseSettings
+
 libraryDependencies ++= Seq(
   "io.argonaut" %% "argonaut" % "6.0-M1",
   "net.databinder" %% "unfiltered" % "0.6.7",
