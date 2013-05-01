@@ -9,7 +9,7 @@ crossScalaVersions := Seq("2.9.2", "2.9.3", "2.10.1")
 releaseSettings
 
 libraryDependencies ++= Seq(
-  "io.argonaut" %% "argonaut" % "6.0-M6",
+  "io.argonaut" %% "argonaut" % "6.0-M7",
   "net.databinder" %% "unfiltered" % "0.6.7",
   "net.databinder" %% "unfiltered-filter" % "0.6.7" % "test",
   "net.databinder" %% "unfiltered-jetty" % "0.6.7" % "test"
