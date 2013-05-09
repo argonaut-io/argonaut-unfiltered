@@ -13,14 +13,14 @@ This library is a basic integration for using [argonaut](http://argonaut.io) wit
 
 ### SBT Settings
 
-Just add argonaut as a dependency (6.0-SNAPSHOT is the only version available on oss.sonatype.org at the moment):
+Just add argonaut-unfiltered as a dependency:
 
-    "io.argonaut" %% "argonaut-unfiltered" % "6.0-SNAPSHOT"
+    "io.argonaut" %% "argonaut-unfiltered" % "6.0-RC1"
 
 
 ### Release
 
-Add to `~/.sbt/0.12.1/sonatype.sbt`
+Add to `~/.sbt/0.12.3/sonatype.sbt`
 
 
     credentials += Credentials("Sonatype Nexus Repository Manager",
