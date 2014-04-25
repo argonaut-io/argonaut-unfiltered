@@ -1,6 +1,6 @@
 # argonaut-unfiltered
 
-[![Build Status](https://travis-ci.org/markhibberd/argonaut-unfiltered.png)](https://travis-ci.org/markhibberd/argonaut-unfiltered)
+[![Build Status](https://travis-ci.org/argonaut-io/argonaut-unfiltered.png)](https://travis-ci.org/argonaut-io/argonaut-unfiltered)
 
 ### What is argonaut-unfiltered?
 
