@@ -1,4 +1,14 @@
 language: scala
 scala:
    - 2.10.4
-   - 2.11.0
+   - 2.11.7
+cache:
+  directories:
+    - $HOME/.ivy2
+    - $HOME/.sbt
+sbt_args: -J-Dproject.version=travis-SNAPSHOT
+before_install:
+  - unset JVM_OPTS SBT_OPTS
+before_script:
+  # Workaround for https://github.com/travis-ci/travis-ci/issues/4527
+  - curl --create-dirs -L -o $HOME/.sbt/launch/0.13.9/sbt-launch.jar http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.9/sbt-launch.jar
