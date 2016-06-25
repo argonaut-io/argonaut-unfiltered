@@ -6,8 +6,6 @@ scalaVersion := "2.11.7"
 
 crossScalaVersions := Seq("2.10.4", "2.11.7")
 
-releaseSettings
-
 libraryDependencies ++= Seq(
   "io.argonaut" %% "argonaut" % "6.1",
   "net.databinder" %% "unfiltered" % "0.8.4",
@@ -20,6 +18,10 @@ resolvers ++= Seq(
   "oss snapshots" at "http://oss.sonatype.org/content/repositories/snapshots",
   "oss releases" at "http://oss.sonatype.org/content/repositories/releases"
 )
+
+releasePublishArtifactsAction := PgpKeys.publishSigned.value
+
+releaseCrossBuild := true
 
 publishMavenStyle := true
 
