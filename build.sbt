@@ -33,8 +33,6 @@ licenses := Seq("BSD-3-Clause" -> url("http://www.opensource.org/licenses/BSD-3-
 
 homepage := Some(url("http://argonaut.io"))
 
-useGpg := true
-
 pomExtra := (
       <scm>
         <url>git@github.com:markhibberd/argonaut.git</url>
