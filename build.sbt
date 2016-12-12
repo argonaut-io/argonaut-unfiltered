@@ -35,8 +35,8 @@ homepage := Some(url("http://argonaut.io"))
 
 pomExtra := (
       <scm>
-        <url>git@github.com:markhibberd/argonaut.git</url>
-        <connection>scm:git:git@github.com:markhibberd/argonaut.git</connection>
+        <url>git@github.com:argonaut-io/argonaut-unfiltered.git</url>
+        <connection>scm:git:git@github.com:argonaut-io/argonaut-unfiltered.git</connection>
       </scm>
       <developers>
         <developer>
