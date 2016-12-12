@@ -2,15 +2,17 @@ organization := "io.argonaut"
 
 name := "argonaut-unfiltered"
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.11.8"
 
-crossScalaVersions := Seq("2.10.4", "2.11.7")
+crossScalaVersions := Seq("2.10.6", "2.11.8", "2.12.1")
+
+val unfilteredVersion = "0.9.0-beta2"
 
 libraryDependencies ++= Seq(
-  "io.argonaut" %% "argonaut" % "6.1",
-  "net.databinder" %% "unfiltered" % "0.8.4",
-  "net.databinder" %% "unfiltered-filter" % "0.8.4" % "test",
-  "net.databinder" %% "unfiltered-jetty" % "0.8.4" % "test"
+  "io.argonaut" %% "argonaut" % "6.2-RC1",
+  "ws.unfiltered" %% "unfiltered" % unfilteredVersion,
+  "ws.unfiltered" %% "unfiltered-filter" % unfilteredVersion % "test",
+  "ws.unfiltered" %% "unfiltered-jetty" % unfilteredVersion % "test"
 )
 
 resolvers ++= Seq(
