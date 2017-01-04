@@ -5,7 +5,7 @@
 ### What is argonaut-unfiltered?
 
 This library is a basic integration for using [argonaut](http://argonaut.io) with the
-[unfiltered](http://unfiltered.databinder.net/Unfiltered.html) web toolkit.
+[unfiltered](http://unfiltered.ws) web toolkit.
 
 ### Documentation
 
