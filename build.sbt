@@ -6,10 +6,10 @@ scalaVersion := "2.11.8"
 
 crossScalaVersions := Seq("2.10.6", "2.11.8", "2.12.1")
 
-val unfilteredVersion = "0.9.0-beta2"
+val unfilteredVersion = "0.9.0"
 
 libraryDependencies ++= Seq(
-  "io.argonaut" %% "argonaut" % "6.2-RC1",
+  "io.argonaut" %% "argonaut" % "6.2-RC2",
   "ws.unfiltered" %% "unfiltered" % unfilteredVersion,
   "ws.unfiltered" %% "unfiltered-filter" % unfilteredVersion % "test",
   "ws.unfiltered" %% "unfiltered-jetty" % unfilteredVersion % "test"
