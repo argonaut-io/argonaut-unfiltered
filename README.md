@@ -15,7 +15,7 @@ This library is a basic integration for using [argonaut](http://argonaut.io) wit
 
 Just add argonaut-unfiltered as a dependency:
 
-    "io.argonaut" %% "argonaut-unfiltered" % "6.0-RC1"
+    "io.argonaut" %% "argonaut-unfiltered" % "6.2.0"
 
 
 ### Release
