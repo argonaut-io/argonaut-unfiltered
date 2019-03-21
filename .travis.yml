@@ -1,8 +1,9 @@
 language: scala
-jdk: oraclejdk7
+jdk: oraclejdk8
 scala:
-   - 2.10.6
-   - 2.11.8
+   - 2.10.7
+   - 2.11.12
+   - 2.12.8
 cache:
   directories:
     - $HOME/.ivy2
@@ -10,15 +11,4 @@ cache:
 sbt_args: -J-Dproject.version=travis-SNAPSHOT
 before_install:
   - unset JVM_OPTS SBT_OPTS
-before_script:
-  # Workaround for https://github.com/travis-ci/travis-ci/issues/4527
-  - curl --create-dirs -L -o $HOME/.sbt/launch/0.13.9/sbt-launch.jar http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.9/sbt-launch.jar
-matrix:
-  include:
-  - scala: 2.12.1
-    jdk: oraclejdk8
 sudo: false
-addons:
-  apt:
-    packages:
-    - oracle-java8-installer

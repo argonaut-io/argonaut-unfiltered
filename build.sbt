@@ -2,14 +2,16 @@ organization := "io.argonaut"
 
 name := "argonaut-unfiltered"
 
-scalaVersion := "2.11.8"
+val Scala211 = "2.11.12"
 
-crossScalaVersions := Seq("2.10.6", "2.11.8", "2.12.1")
+scalaVersion := Scala211
+
+crossScalaVersions := Seq("2.10.7", Scala211, "2.12.8")
 
 val unfilteredVersion = "0.9.1"
 
 libraryDependencies ++= Seq(
-  "io.argonaut" %% "argonaut" % "6.2",
+  "io.argonaut" %% "argonaut" % "6.2.2",
   "ws.unfiltered" %% "unfiltered" % unfilteredVersion,
   "ws.unfiltered" %% "unfiltered-filter" % unfilteredVersion % "test",
   "ws.unfiltered" %% "unfiltered-jetty" % unfilteredVersion % "test"
@@ -58,10 +60,10 @@ pomExtra := (
       </developers>
 )
 
-publishTo <<= version.apply(v => {
+publishTo := {
   val nexus = "https://oss.sonatype.org/"
-  if (v.trim.endsWith("SNAPSHOT"))
+  if (version.value.trim.endsWith("SNAPSHOT"))
     Some("snapshots" at nexus + "content/repositories/snapshots")
   else
     Some("releases"  at nexus + "service/local/staging/deploy/maven2")
-})
+}
